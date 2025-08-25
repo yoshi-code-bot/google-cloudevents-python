@@ -13,18 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from google.events.firebase.auth import gapic_version as package_version
+from .data import (
+    AuthEventData,
+    User,
+    UserInfo,
+    UserMetadata,
+)
 
-__version__ = package_version.__version__
-
-
-
-from google.events.firebase.auth_v2.types.data import AuthEventData
-from google.events.firebase.auth_v2.types.data import User
-from google.events.firebase.auth_v2.types.data import UserInfo
-from google.events.firebase.auth_v2.types.data import UserMetadata
-
-__all__ = ('AuthEventData',
+__all__ = (
+    'AuthEventData',
     'User',
     'UserInfo',
     'UserMetadata',
