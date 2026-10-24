@@ -19,11 +19,13 @@ __version__ = package_version.__version__
 
 
 
-from google.events.firebase.auth_v1.types.data import AuthEventData
-from google.events.firebase.auth_v1.types.data import UserInfo
-from google.events.firebase.auth_v1.types.data import UserMetadata
+from google.events.firebase.auth_v2.types.data import AuthEventData
+from google.events.firebase.auth_v2.types.data import User
+from google.events.firebase.auth_v2.types.data import UserInfo
+from google.events.firebase.auth_v2.types.data import UserMetadata
 
 __all__ = ('AuthEventData',
+    'User',
     'UserInfo',
     'UserMetadata',
 )
